@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/leaf icon.jpeg">
+    <title>Products - Ọtọ̀ by Nife</title>
+    <style>
+        .sidebar {
+            position: relative !important;
+            top: 0 !important;
+            left: 0 !important;
+            width: 100% !important;
+            height: auto !important;
+            background: #f8f9fa;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .main-content {
+            min-height: 600px;
+            margin-bottom: 50px;
+        }
+        .category-section {
+            margin-bottom: 50px;
+        }
+        .category-section h3 {
+            border-bottom: 2px solid rgb(107, 243, 107);
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+            color: #1d1d24;
+        }
+        .sidebar ul li a.active {
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body background="img/pawel-czerwinski-cx90ak4WBFQ-unsplash.jpg">
+    <div class="container">
+            <div class="header">
+        <nav>
+            <h1><a href="index.html">Ọtọ̀</a></h1>
+            <small><ul id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#cartModal">
+                    <i class='bx bx-cart'></i> Cart (<span class="cart-count">0</span>)
+                </a></li>
+            </ul></small>
+            <span class="nav-cta"><a href="products.html" class="button">Shop Now</a></span>
+             <button class="nav-toggle" id="navToggle">&#9776;</button>
+        </nav>
+    </div>
+    </div>
+
+
+    <div class="search my-3 d-flex justify-content-center">
+        <div class="col-4 mt-5 ml-5 pr-0 d-flex footer-form">
+            <input class="form-control form-control-sm" type="text" placeholder="search products">
+        </div>
+        <div class="col-2 mt-5 ml-0 pl-0">
+            <a href="#" class="butt">Search</a>
+        </div>
+    </div>
+
+    <div class="container main-content">
+        <div class="row">
+
+            <!-- Sidebar -->
+            <div class="col-md-3 mt-5">
+                <div class="sidebar bg-light p-3">
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><h4>Categories</h4></li>
+                        <li><a href="#all" class="text-dark">All Products</a></li>
+                        <li><hr></li>
+                        <li class="py-1"><a href="#fresh-produce" class="text-dark">Fresh Produce</a></li>
+                        <li class="py-1"><a href="#vegetables" class="text-dark">Vegetables</a></li>
+                        <li class="py-1"><a href="#meat-poultry" class="text-dark">Meat & Poultry</a></li>
+                        <li class="py-1"><a href="#dairy" class="text-dark">Dairy Products</a></li>
+                        <li class="py-1"><a href="#eggs" class="text-dark">Eggs</a></li>
+                        <li class="py-1"><a href="#grains" class="text-dark">Grains & Cereals</a></li>
+                        <li class="py-1"><a href="#seeds" class="text-dark">Seeds & Seedlings</a></li>
+                        <li class="py-1"><a href="#farm-pantry" class="text-dark">Farm Pantry</a></li>
+                        <li class="py-1"><a href="#animal-feed" class="text-dark">Animal Feed</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Products -->
+            <div class="col-md-9" id="all">
+
+                <!-- Fresh Produce -->
+                <div class="category-section" id="fresh-produce">
+                    <h3>Fresh Produce</h3>
+                    <div class="row row-cols-1 row-cols-md-3">
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/apples.jpg" class="card-img-top" alt="Apples" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Apples'">
+                            <div class="card-body"><h5 class="card-title">Apples</h5><h6>₦4.99</h6><p class="card-text">Fresh crisp apples, picked at peak ripeness.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/bananas.jpg" class="card-img-top" alt="Bananas" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Bananas'">
+                            <div class="card-body"><h5 class="card-title">Bananas</h5><h6>₦2.99</h6><p class="card-text">Sweet yellow bananas. Great for smoothies.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/oranges.jpg" class="card-img-top" alt="Oranges" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Oranges'">
+                            <div class="card-body"><h5 class="card-title">Oranges</h5><h6>₦3.99</h6><p class="card-text">Juicy and vitamin-rich oranges.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/pineapples.jpg" class="card-img-top" alt="Pineapples" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Pineapples'">
+                            <div class="card-body"><h5 class="card-title">Pineapples</h5><h6>₦5.49</h6><p class="card-text">Tropical pineapples, sweet and tangy.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/mangoes.jpg" class="card-img-top" alt="Mangoes" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Mangoes'">
+                            <div class="card-body"><h5 class="card-title">Mangoes</h5><h6>₦6.99</h6><p class="card-text">Ripe and fragrant mangoes from the farm.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/watermelons.jpg" class="card-img-top" alt="Watermelons" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Watermelons'">
+                            <div class="card-body"><h5 class="card-title">Watermelons</h5><h6>₦8.99</h6><p class="card-text">Large, refreshing watermelons.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/pawpaw.jpg" class="card-img-top" alt="Pawpaw" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Pawpaw'">
+                            <div class="card-body"><h5 class="card-title">Pawpaw (Papaya)</h5><h6>₦4.49</h6><p class="card-text">Sweet and nutritious pawpaw, freshly harvested.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/avocados.jpg" class="card-img-top" alt="Avocados" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Avocados'">
+                            <div class="card-body"><h5 class="card-title">Avocados</h5><h6>₦5.99</h6><p class="card-text">Creamy, ripe avocados perfect for any meal.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/strawberries.jpg" class="card-img-top" alt="Strawberries" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Strawberries'">
+                            <div class="card-body"><h5 class="card-title">Strawberries</h5><h6>₦7.99</h6><p class="card-text">Fresh red strawberries, sweet and juicy.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/lemons.jpg" class="card-img-top" alt="Lemons" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Lemons'">
+                            <div class="card-body"><h5 class="card-title">Lemons</h5><h6>₦3.49</h6><p class="card-text">Tangy fresh lemons, great for cooking and drinks.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                    </div>
+                </div>
+
+                <!-- Vegetables -->
+                <div class="category-section" id="vegetables">
+                    <h3>Vegetables</h3>
+                    <div class="row row-cols-1 row-cols-md-3">
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/tomatoes.jpg" class="card-img-top" alt="Tomatoes" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Tomatoes'">
+                            <div class="card-body"><h5 class="card-title">Tomatoes</h5><h6>₦3.99</h6><p class="card-text">Firm, ripe tomatoes straight from the garden.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/onions.jpg" class="card-img-top" alt="Onions" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Onions'">
+                            <div class="card-body"><h5 class="card-title">Onions</h5><h6>₦2.49</h6><p class="card-text">Fresh onions, essential for every kitchen.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/carrots.jpg" class="card-img-top" alt="Carrots" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Carrots'">
+                            <div class="card-body"><h5 class="card-title">Carrots</h5><h6>₦2.99</h6><p class="card-text">Crunchy organic carrots, rich in vitamins.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/cabbage.jpg" class="card-img-top" alt="Cabbage" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Cabbage'">
+                            <div class="card-body"><h5 class="card-title">Cabbage</h5><h6>₦3.49</h6><p class="card-text">Fresh green cabbage, crisp and healthy.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/lettuce.jpg" class="card-img-top" alt="Lettuce" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Lettuce'">
+                            <div class="card-body"><h5 class="card-title">Lettuce</h5><h6>₦2.99</h6><p class="card-text">Leafy fresh lettuce perfect for salads.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/spinach.jpg" class="card-img-top" alt="Spinach" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Spinach'">
+                            <div class="card-body"><h5 class="card-title">Spinach</h5><h6>₦3.49</h6><p class="card-text">Tender fresh spinach leaves, rich in iron.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/greenbeans.jpg" class="card-img-top" alt="Green Beans" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Green+Beans'">
+                            <div class="card-body"><h5 class="card-title">Green Beans</h5><h6>₦4.49</h6><p class="card-text">Tender green beans, great for stir-fries.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/cucumbers.jpg" class="card-img-top" alt="Cucumbers" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Cucumbers'">
+                            <div class="card-body"><h5 class="card-title">Cucumbers</h5><h6>₦2.99</h6><p class="card-text">Cool and crisp cucumbers for salads.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/bellpeppers.jpg" class="card-img-top" alt="Bell Peppers" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Bell+Peppers'">
+                            <div class="card-body"><h5 class="card-title">Bell Peppers</h5><h6>₦4.99</h6><p class="card-text">Colorful bell peppers, sweet and crunchy.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/chilipeppers.jpg" class="card-img-top" alt="Chili Peppers" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Chili+Peppers'">
+                            <div class="card-body"><h5 class="card-title">Chili Peppers</h5><h6>₦3.49</h6><p class="card-text">Hot and spicy chili peppers for bold flavor.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/eggplant.jpg" class="card-img-top" alt="Eggplant" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Eggplant'">
+                            <div class="card-body"><h5 class="card-title">Eggplant</h5><h6>₦4.99</h6><p class="card-text">Fresh organic eggplant from the greenhouse.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/okra.jpg" class="card-img-top" alt="Okra" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Okra'">
+                            <div class="card-body"><h5 class="card-title">Okra</h5><h6>₦3.99</h6><p class="card-text">Tender fresh okra, a West African staple.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/pumpkin.jpg" class="card-img-top" alt="Pumpkin" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Pumpkin'">
+                            <div class="card-body"><h5 class="card-title">Pumpkin</h5><h6>₦6.99</h6><p class="card-text">Fresh farm pumpkin, great for soups and stews.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/sweetpotatoes.jpg" class="card-img-top" alt="Sweet Potatoes" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Sweet+Potatoes'">
+                            <div class="card-body"><h5 class="card-title">Sweet Potatoes</h5><h6>₦4.49</h6><p class="card-text">Naturally sweet and nutritious sweet potatoes.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                    </div>
+                </div>
+
+                <!-- Meat & Poultry -->
+                <div class="category-section" id="meat-poultry">
+                    <h3>Meat & Poultry</h3>
+                    <div class="row row-cols-1 row-cols-md-3">
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/freshchicken.jpg" class="card-img-top" alt="Fresh Chicken" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Fresh+Chicken'">
+                            <div class="card-body"><h5 class="card-title">Fresh Chicken</h5><h6>₦12.99</h6><p class="card-text">Whole fresh chicken, farm-raised.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/turkey.jpg" class="card-img-top" alt="Whole Turkey" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Whole+Turkey'">
+                            <div class="card-body"><h5 class="card-title">Whole Turkey</h5><h6>₦29.99</h6><p class="card-text">Premium whole turkey, perfect for gatherings.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/goatmeat.jpg" class="card-img-top" alt="Goat Meat" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Goat+Meat'">
+                            <div class="card-body"><h5 class="card-title">Goat Meat</h5><h6>₦18.99</h6><p class="card-text">Fresh goat meat, lean and full of flavor.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/beefcuts.jpg" class="card-img-top" alt="Beef Cuts" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Beef+Cuts'">
+                            <div class="card-body"><h5 class="card-title">Beef Cuts</h5><h6>₦22.99</h6><p class="card-text">Quality beef cuts for any cooking style.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/porkchops.jpg" class="card-img-top" alt="Pork Chops" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Pork+Chops'">
+                            <div class="card-body"><h5 class="card-title">Pork Chops</h5><h6>₦14.99</h6><p class="card-text">Tender pork chops, freshly cut.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/chickenwings.jpg" class="card-img-top" alt="Chicken Wings" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Chicken+Wings'">
+                            <div class="card-body"><h5 class="card-title">Chicken Wings</h5><h6>₦9.99</h6><p class="card-text">Fresh chicken wings, great for grilling.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/chickenbreast.jpg" class="card-img-top" alt="Chicken Breast" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Chicken+Breast'">
+                            <div class="card-body"><h5 class="card-title">Chicken Breast</h5><h6>₦11.99</h6><p class="card-text">Lean boneless chicken breast, high in protein.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/chickenthighs.jpg" class="card-img-top" alt="Chicken Thighs" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Chicken+Thighs'">
+                            <div class="card-body"><h5 class="card-title">Chicken Thighs</h5><h6>₦9.49</h6><p class="card-text">Juicy chicken thighs, perfect for stews.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/groundbeef.jpg" class="card-img-top" alt="Ground Beef" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Ground+Beef'">
+                            <div class="card-body"><h5 class="card-title">Ground Beef</h5><h6>₦13.99</h6><p class="card-text">Freshly minced ground beef, great for burgers.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/smokedturkey.jpg" class="card-img-top" alt="Smoked Turkey" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Smoked+Turkey'">
+                            <div class="card-body"><h5 class="card-title">Smoked Turkey</h5><h6>₦19.99</h6><p class="card-text">Deliciously smoked turkey with rich flavor.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                    </div>
+                </div>
+
+                <!-- Dairy Products -->
+                <div class="category-section" id="dairy">
+                    <h3>Dairy Products</h3>
+                    <div class="row row-cols-1 row-cols-md-3">
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/cowmilk.jpg" class="card-img-top" alt="Fresh Cow Milk" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Cow+Milk'">
+                            <div class="card-body"><h5 class="card-title">Fresh Cow Milk</h5><h6>₦4.99</h6><p class="card-text">Pure fresh cow milk from our farm.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/goatmilk.jpg" class="card-img-top" alt="Goat Milk" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Goat+Milk'">
+                            <div class="card-body"><h5 class="card-title">Goat Milk</h5><h6>₦5.99</h6><p class="card-text">Creamy goat milk, naturally nutritious.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/butter.jpg" class="card-img-top" alt="Butter" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Butter'">
+                            <div class="card-body"><h5 class="card-title">Butter</h5><h6>₦3.99</h6><p class="card-text">Rich and creamy farm-fresh butter.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/cheddarcheese.jpg" class="card-img-top" alt="Cheddar Cheese" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Cheddar+Cheese'">
+                            <div class="card-body"><h5 class="card-title">Cheddar Cheese</h5><h6>₦7.49</h6><p class="card-text">Sharp and aged cheddar cheese.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/mozzarella.jpg" class="card-img-top" alt="Mozzarella Cheese" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Mozzarella'">
+                            <div class="card-body"><h5 class="card-title">Mozzarella Cheese</h5><h6>₦6.99</h6><p class="card-text">Soft and milky mozzarella, great on pizza.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/yogurt.jpg" class="card-img-top" alt="Yogurt" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Yogurt'">
+                            <div class="card-body"><h5 class="card-title">Yogurt</h5><h6>₦3.49</h6><p class="card-text">Creamy natural yogurt, probiotic-rich.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/cream.jpg" class="card-img-top" alt="Cream" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Cream'">
+                            <div class="card-body"><h5 class="card-title">Cream</h5><h6>₦4.49</h6><p class="card-text">Fresh heavy cream for cooking and baking.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/sourcream.jpg" class="card-img-top" alt="Sour Cream" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Sour+Cream'">
+                            <div class="card-body"><h5 class="card-title">Sour Cream</h5><h6>₦3.99</h6><p class="card-text">Tangy sour cream, perfect as a topping.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                    </div>
+                </div>
+
+                <!-- Eggs -->
+                <div class="category-section" id="eggs">
+                    <h3>Eggs</h3>
+                    <div class="row row-cols-1 row-cols-md-3">
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/chickeneggs.jpg" class="card-img-top" alt="Chicken Eggs" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Chicken+Eggs'">
+                            <div class="card-body"><h5 class="card-title">Chicken Eggs</h5><h6>₦3.99</h6><p class="card-text">Farm-fresh white chicken eggs, dozen pack.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/browneggs.jpg" class="card-img-top" alt="Brown Eggs" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Brown+Eggs'">
+                            <div class="card-body"><h5 class="card-title">Brown Eggs</h5><h6>₦4.49</h6><p class="card-text">Rich brown eggs, naturally laid.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/freerangeeggs.jpg" class="card-img-top" alt="Free-range Eggs" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Free-range+Eggs'">
+                            <div class="card-body"><h5 class="card-title">Free-range Eggs</h5><h6>₦5.49</h6><p class="card-text">Eggs from hens raised freely outdoors.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/organiceggs.jpg" class="card-img-top" alt="Organic Eggs" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Organic+Eggs'">
+                            <div class="card-body"><h5 class="card-title">Organic Eggs</h5><h6>₦6.49</h6><p class="card-text">100% organic certified eggs.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/duckeggs.jpg" class="card-img-top" alt="Duck Eggs" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Duck+Eggs'">
+                            <div class="card-body"><h5 class="card-title">Duck Eggs</h5><h6>₦7.99</h6><p class="card-text">Large and rich duck eggs, great for baking.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/quaileggs.jpg" class="card-img-top" alt="Quail Eggs" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Quail+Eggs'">
+                            <div class="card-body"><h5 class="card-title">Quail Eggs</h5><h6>₦5.99</h6><p class="card-text">Delicate quail eggs, a gourmet treat.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                    </div>
+                </div>
+
+                <!-- Grains & Cereals -->
+                <div class="category-section" id="grains">
+                    <h3>Grains & Cereals</h3>
+                    <div class="row row-cols-1 row-cols-md-3">
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/whiterice.jpg" class="card-img-top" alt="White Rice" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=White+Rice'">
+                            <div class="card-body"><h5 class="card-title">White Rice</h5><h6>₦5.99</h6><p class="card-text">Premium long-grain white rice.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/brownrice.jpg" class="card-img-top" alt="Brown Rice" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Brown+Rice'">
+                            <div class="card-body"><h5 class="card-title">Brown Rice</h5><h6>₦6.49</h6><p class="card-text">Whole grain brown rice, high in fiber.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/maize.jpg" class="card-img-top" alt="Maize" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Maize'">
+                            <div class="card-body"><h5 class="card-title">Maize (Corn)</h5><h6>₦4.49</h6><p class="card-text">Dried maize grain, a versatile staple.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/wheat.jpg" class="card-img-top" alt="Wheat Grain" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Wheat+Grain'">
+                            <div class="card-body"><h5 class="card-title">Wheat Grain</h5><h6>₦5.49</h6><p class="card-text">Whole wheat grain for milling and cooking.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/millet.jpg" class="card-img-top" alt="Millet" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Millet'">
+                            <div class="card-body"><h5 class="card-title">Millet</h5><h6>₦4.99</h6><p class="card-text">Nutritious millet grain, gluten-free.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/sorghum.jpg" class="card-img-top" alt="Sorghum" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Sorghum'">
+                            <div class="card-body"><h5 class="card-title">Sorghum</h5><h6>₦4.99</h6><p class="card-text">Drought-resistant sorghum grain.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/oats.jpg" class="card-img-top" alt="Oats" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Oats'">
+                            <div class="card-body"><h5 class="card-title">Oats</h5><h6>₦5.99</h6><p class="card-text">Rolled oats, perfect for a healthy breakfast.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/barley.jpg" class="card-img-top" alt="Barley" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Barley'">
+                            <div class="card-body"><h5 class="card-title">Barley</h5><h6>₦5.49</h6><p class="card-text">Wholesome barley grain for soups and stews.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                    </div>
+                </div>
+
+                <!-- Seeds & Seedlings -->
+                <div class="category-section" id="seeds">
+                    <h3>Seeds & Seedlings</h3>
+                    <div class="row row-cols-1 row-cols-md-3">
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/tomatoseeds.jpg" class="card-img-top" alt="Tomato Seeds" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Tomato+Seeds'">
+                            <div class="card-body"><h5 class="card-title">Tomato Seeds</h5><h6>₦2.49</h6><p class="card-text">High-yield tomato seeds for your garden.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/pepperseed.jpg" class="card-img-top" alt="Pepper Seeds" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Pepper+Seeds'">
+                            <div class="card-body"><h5 class="card-title">Pepper Seeds</h5><h6>₦2.49</h6><p class="card-text">Assorted pepper seeds, hot and sweet varieties.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/cucumberseeds.jpg" class="card-img-top" alt="Cucumber Seeds" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Cucumber+Seeds'">
+                            <div class="card-body"><h5 class="card-title">Cucumber Seeds</h5><h6>₦2.99</h6><p class="card-text">Fast-growing cucumber seeds.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/lettuceseeds.jpg" class="card-img-top" alt="Lettuce Seeds" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Lettuce+Seeds'">
+                            <div class="card-body"><h5 class="card-title">Lettuce Seeds</h5><h6>₦1.99</h6><p class="card-text">Quick-sprouting lettuce seeds for home growing.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/pumpkinseeds.jpg" class="card-img-top" alt="Pumpkin Seeds" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Pumpkin+Seeds'">
+                            <div class="card-body"><h5 class="card-title">Pumpkin Seeds</h5><h6>₦2.99</h6><p class="card-text">Roast or plant — versatile pumpkin seeds.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/maizeseeds.jpg" class="card-img-top" alt="Maize Seeds" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Maize+Seeds'">
+                            <div class="card-body"><h5 class="card-title">Maize Seeds</h5><h6>₦3.49</h6><p class="card-text">High-yield hybrid maize seeds.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/sunflowerseeds.jpg" class="card-img-top" alt="Sunflower Seeds" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Sunflower+Seeds'">
+                            <div class="card-body"><h5 class="card-title">Sunflower Seeds</h5><h6>₦2.99</h6><p class="card-text">Nutritious sunflower seeds for snacking or planting.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/mangoseeds.jpg" class="card-img-top" alt="Mango Seedlings" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Mango+Seedlings'">
+                            <div class="card-body"><h5 class="card-title">Mango Seedlings</h5><h6>₦8.99</h6><p class="card-text">Young mango seedlings ready for transplanting.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/orangeseeds.jpg" class="card-img-top" alt="Orange Seedlings" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Orange+Seedlings'">
+                            <div class="card-body"><h5 class="card-title">Orange Seedlings</h5><h6>₦8.99</h6><p class="card-text">Healthy orange tree seedlings for your farm.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/avocadoseeds.jpg" class="card-img-top" alt="Avocado Seedlings" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Avocado+Seedlings'">
+                            <div class="card-body"><h5 class="card-title">Avocado Seedlings</h5><h6>₦9.99</h6><p class="card-text">Grafted avocado seedlings, fast-bearing variety.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                    </div>
+                </div>
+
+                <!-- Farm Pantry -->
+                <div class="category-section" id="farm-pantry">
+                    <h3>Farm Pantry</h3>
+                    <div class="row row-cols-1 row-cols-md-3">
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/rawhoney.jpg" class="card-img-top" alt="Raw Honey" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Raw+Honey'">
+                            <div class="card-body"><h5 class="card-title">Raw Honey</h5><h6>₦9.99</h6><p class="card-text">Pure unfiltered raw honey from our hives.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/fruitjam.jpg" class="card-img-top" alt="Fruit Jam" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Fruit+Jam'">
+                            <div class="card-body"><h5 class="card-title">Fruit Jam</h5><h6>₦5.99</h6><p class="card-text">Homemade fruit jam, no preservatives added.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/peanutbutter.jpg" class="card-img-top" alt="Peanut Butter" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Peanut+Butter'">
+                            <div class="card-body"><h5 class="card-title">Peanut Butter</h5><h6>₦6.49</h6><p class="card-text">Creamy natural peanut butter, no additives.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/driedfruits.jpg" class="card-img-top" alt="Dried Fruits" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Dried+Fruits'">
+                            <div class="card-body"><h5 class="card-title">Dried Fruits</h5><h6>₦7.99</h6><p class="card-text">Assorted sun-dried fruits, naturally sweet.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/tomatopaste.jpg" class="card-img-top" alt="Tomato Paste" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Tomato+Paste'">
+                            <div class="card-body"><h5 class="card-title">Tomato Paste</h5><h6>₦3.99</h6><p class="card-text">Rich and thick tomato paste, farm-made.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/pickledvegetables.jpg" class="card-img-top" alt="Pickled Vegetables" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Pickled+Veg'">
+                            <div class="card-body"><h5 class="card-title">Pickled Vegetables</h5><h6>₦5.49</h6><p class="card-text">Tangy pickled vegetables, traditionally prepared.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/cornflour.jpg" class="card-img-top" alt="Corn Flour" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Corn+Flour'">
+                            <div class="card-body"><h5 class="card-title">Corn Flour</h5><h6>₦3.99</h6><p class="card-text">Finely milled corn flour for baking and cooking.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/wheatflour.jpg" class="card-img-top" alt="Wheat Flour" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Wheat+Flour'">
+                            <div class="card-body"><h5 class="card-title">Wheat Flour</h5><h6>₦4.49</h6><p class="card-text">Stone-ground whole wheat flour.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/groundspices.jpg" class="card-img-top" alt="Ground Spices" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Ground+Spices'">
+                            <div class="card-body"><h5 class="card-title">Ground Spices</h5><h6>₦4.99</h6><p class="card-text">Freshly ground farm spice blends.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                    </div>
+                </div>
+
+                <!-- Animal Feed -->
+                <div class="category-section" id="animal-feed">
+                    <h3>Animal Feed</h3>
+                    <div class="row row-cols-1 row-cols-md-3">
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/poultryfeed.jpg" class="card-img-top" alt="Poultry Feed" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Poultry+Feed'">
+                            <div class="card-body"><h5 class="card-title">Poultry Feed</h5><h6>₦14.99</h6><p class="card-text">Balanced feed mix for all poultry.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/broilerfeed.jpg" class="card-img-top" alt="Broiler Starter Feed" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Broiler+Feed'">
+                            <div class="card-body"><h5 class="card-title">Broiler Starter Feed</h5><h6>₦16.99</h6><p class="card-text">High-protein starter feed for broiler chicks.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/layerfeed.jpg" class="card-img-top" alt="Layer Feed" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Layer+Feed'">
+                            <div class="card-body"><h5 class="card-title">Layer Feed</h5><h6>₦15.99</h6><p class="card-text">Calcium-enriched feed for egg-laying hens.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/fishfeed.jpg" class="card-img-top" alt="Fish Feed" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Fish+Feed'">
+                            <div class="card-body"><h5 class="card-title">Fish Feed</h5><h6>₦17.99</h6><p class="card-text">Floating pellet fish feed for catfish and tilapia.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/goatfeed.jpg" class="card-img-top" alt="Goat Feed" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Goat+Feed'">
+                            <div class="card-body"><h5 class="card-title">Goat Feed</h5><h6>₦13.99</h6><p class="card-text">Nutritious pellet feed formulated for goats.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/cattlefeed.jpg" class="card-img-top" alt="Cattle Feed" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Cattle+Feed'">
+                            <div class="card-body"><h5 class="card-title">Cattle Feed</h5><h6>₦19.99</h6><p class="card-text">High-energy cattle feed for healthy livestock.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/pigfeed.jpg" class="card-img-top" alt="Pig Feed" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Pig+Feed'">
+                            <div class="card-body"><h5 class="card-title">Pig Feed</h5><h6>₦15.49</h6><p class="card-text">Balanced grower feed for pigs.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/mixedcornfeed.jpg" class="card-img-top" alt="Corn Feed Mix" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Corn+Feed+Mix'">
+                            <div class="card-body"><h5 class="card-title">Corn Feed Mix</h5><h6>₦12.99</h6><p class="card-text">Energy-rich corn-based feed blend.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                        <div class="col mb-4"><div class="card h-100">
+                            <img src="img/soybeanmeal.jpg" class="card-img-top" alt="Soybean Meal Feed" onerror="this.src='https://placehold.co/300x200/e8f5e9/2d6a2d?text=Soybean+Meal'">
+                            <div class="card-body"><h5 class="card-title">Soybean Meal Feed</h5><h6>₦14.49</h6><p class="card-text">High-protein soybean meal for animal nutrition.</p>
+                            <div class="input-group mb-3"><input type="number" class="form-control quantity-input" value="1" min="1" style="max-width: 80px;"><div class="input-group-append"><button class="btn btn-add-cart" type="button">Add to Cart</button></div></div>
+                            </div></div></div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Newsletter Footer -->
+    <div class="container-flex bg-dark">
+        <div class="footer">
+            <div class="row justify-content-center">
+                <div class="col-4 footer-content mt-3 ml-5 d-block">
+                    <small><h6><span>Subscribe To Our Newsletter</span></h6></small>
+                    <small><p class="footer">Enter our mailing list to receive daily news and get 20% off coupons for all items</p></small>
+                </div>
+                <div class="col-4 mt-3 ml-5 pr-0 d-flex footer-form">
+                    <input class="form-control form-control-sm" type="email" placeholder="Enter your email address">
+                </div>
+                <div class="col-2 mt-3 ml-0 pl-0">
+                    <a href="#" class="butt">Subscribe</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Final Footer -->
+    <div class="container-flex bg-success">
+        <div class="final-footer">
+            <div class="row justify-content-center">
+                <div class="col-4 my-3">
+                    <h2><a href="index.html">Ọtọ̀</a></h2>
+                    <small><p>Address- Lorem ipsum dolor sit amet, consectetur adipisicing elit ut aliquam, purus sit</p></small>
+                    <div class="socials">
+                        <ul>
+                            <li><a href="#"><img src="img/icons8-facebook-48.png" alt=""></a></li>
+                            <li><a href="#"><img src="img/icons8-instagram-48.png" alt=""></a></li>
+                            <li><a href="#"><img src="img/icons8-twitter-48.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="futter col-2 my-3">
+                    <h5>Products</h5>
+                    <small><ul>
+                        <li><a href="#vegetables">Vegetables</a></li>
+                        <li><a href="#meat-poultry">Meat & Poultry</a></li>
+                        <li><a href="#dairy">Dairy</a></li>
+                        <li><a href="#eggs">Eggs</a></li>
+                        <li><a href="#grains">Grains</a></li>
+                    </ul></small>
+                </div>
+                <div class="futter col-2 my-3">
+                    <h5>Company</h5>
+                    <small><ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="partner.html">Become a Partner</a></li>
+                    </ul></small>
+                </div>
+                <div class="futter col-2 my-3">
+                    <h5>Support</h5>
+                    <small><ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="contact.html#faq">FAQs</a></li>
+                    </ul></small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p class="copyright">&copy; <small>2026</small> <small><i>Ọtọ̀ by Nife.</i></small> <small>All rights reserved.</small></p>
+
+    <!-- Cart Modal -->
+    <div class="modal fade" id="cartModal" tabindex="-1">
+        <div class="modal-dialog modal-lg"><div class="modal-content">
+            <div class="modal-header bg-success text-white">
+                <h5 class="modal-title">Shopping Cart</h5>
+                <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div id="cart-items-list"></div>
+                <div class="d-flex justify-content-between mt-4 border-top pt-3">
+                    <h4>Total</h4>
+                    <h4 id="cart-total">₦0.00</h4>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Keep Shopping</button>
+                <button type="button" class="button-1" onclick="checkout()">Checkout Now</button>
+            </div>
+        </div></div>
+    </div>
+    <script>
+        document.getElementById('navToggle').addEventListener('click', () => {
+            document.getElementById('navMenu').classList.toggle('open');
+        });
+    </script>
+    <script src="main.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const sections = document.querySelectorAll('.category-section');
+        const sidebarLinks = document.querySelectorAll('.sidebar a');
+        const searchInput = document.querySelector('.search input');
+        const searchBtn = document.querySelector('.search .butt');
+
+        // Insert a "no results" message container
+        const noResults = document.createElement('p');
+        noResults.id = 'no-results';
+        noResults.style.cssText = 'display:none; text-align:center; padding:40px; font-size:16px; color:#555;';
+        noResults.textContent = '🌿 Sorry, that product is not available.';
+        document.querySelector('.col-md-9').appendChild(noResults);
+
+        // Category filter
+        sidebarLinks.forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = this.getAttribute('href').replace('#', '');
+
+                // Reset search
+                searchInput.value = '';
+                showAllCards();
+
+                // Update active state
+                sidebarLinks.forEach(l => l.classList.remove('active'));
+                this.classList.add('active');
+
+                if (target === 'all') {
+                    sections.forEach(s => s.style.display = 'block');
+                } else {
+                    sections.forEach(s => {
+                        s.style.display = s.id === target ? 'block' : 'none';
+                    });
+                }
+
+                noResults.style.display = 'none';
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        });
+
+        // Search
+        function doSearch() {
+            const query = searchInput.value.trim().toLowerCase();
+            if (!query) return;
+
+            // Reset category filter
+            sidebarLinks.forEach(l => l.classList.remove('active'));
+            sections.forEach(s => s.style.display = 'block');
+
+            let found = false;
+
+            sections.forEach(section => {
+                const cards = section.querySelectorAll('.col.mb-4');
+                let sectionHasMatch = false;
+
+                cards.forEach(card => {
+                    const name = card.querySelector('.card-title').textContent.toLowerCase();
+                    if (name.includes(query)) {
+                        card.style.display = 'block';
+                        sectionHasMatch = true;
+                        found = true;
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+
+                section.style.display = sectionHasMatch ? 'block' : 'none';
+            });
+
+            noResults.style.display = found ? 'none' : 'block';
+        }
+
+        function showAllCards() {
+            sections.forEach(section => {
+                section.style.display = 'block';
+                section.querySelectorAll('.col.mb-4').forEach(card => card.style.display = 'block');
+            });
+            noResults.style.display = 'none';
+        }
+
+        searchBtn.addEventListener('click', doSearch);
+        searchInput.addEventListener('keydown', e => { if (e.key === 'Enter') doSearch(); });
+    </script>
+</body>
+</html>
