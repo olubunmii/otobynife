@@ -1,5 +1,8 @@
 let cart = JSON.parse(localStorage.getItem('FARM_CART')) || [];
 
+// Strip out any corrupted items that have invalid prices
+cart = cart.filter(item => item && typeof item.price === 'number' && !isNaN(item.price));
+
 document.addEventListener('DOMContentLoaded', () => {
     updateCartCount();
     setupEventListeners();
@@ -99,6 +102,3 @@ function checkout() {
     cart = [];
     saveAndRefresh();
 }
-
-
-
